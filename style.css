@@ -165,7 +165,7 @@ h3, h2 {
 .main-section {
     padding: 0 8px;
 }
-*.portfolio {
+.portfolio {
     position: relative;
     float: left;
     width: 274px;
