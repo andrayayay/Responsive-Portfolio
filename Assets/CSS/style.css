@@ -1,268 +1,157 @@
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 20px;
-  color: #777777;
-  background: url("../images/geo_colors.jpg");
-  line-height: 30px;
-    
+body{
+  background: lightseagreen;
 }
 
-/* border-box tells the browser to account for any border and
-padding in the values you specify for an element's width and height.*/
-
-* {
-  box-sizing: border-box;
+/* SIDEBAR */
+/* The side navigation menu */
+#home,
+#portfolio{
+  font-weight: 500;
+  font-size: 120%;
 }
 
-.container {
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: #dddddd;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-  font-size: 18px;
-  color: black;
-}
-
-h1, h2, h3,
-p {
-margin-bottom: 20px;
-}
-
-/* last-child created a 0 margin between the paragraph and the footer*/
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-
-
-h1, h2, h3 {
-font-family: Georgia, Times, "Times New Roman", serif;
-font-weight: 700;
-color: #4aaaa5;
-}
-
-h1 {
-  padding-bottom: 20px;
-  font-size: 30px;
-  line-height: 20px;
-}
-
-h2, h3 {
-font-size: 20px;
-}
-
-/* overflow: auto; a scrollbar will added to see the rest of the content.
-  The z-index property specifies the stack order of an element. An element with greater
-stack order is always in front of an element with a lower stack order.
-*/ 
-.top_header{
-  position: fixed;
-  background:#ffffff;
-  color: #ffffff;
-  border-bottom: 2px solid #cccccc;
-  margin: 0 0 20px; 
-  overflow: auto;
-  z-index: 100;
-  width: 100%;
-}
-
-#logo {
-  float: left;
-  width: 250px;
-  height: 85px;
-  background: teal;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-
-}
-
-/*positioning nav bar*/
-
-/* design to nav links*/
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
-nav a:first-child {
-  border-left: 0 none;
-}
-
-/* main section*/
-
-#main-container {
-  padding-top: 40px;
-  margin: 0 auto;
-  min-height: calc(100vh - 70px);
-
-}
-
-.main-bio {
-  float: left;
-  width: 100%;
-  max-width: 960px;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
-  overflow: hidden;
-}
-
-.main-bio, .image, {
-  float: left;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 15px;
-}
-
-.image, .main-bio {
-float: left;
-}
-
-footer {
-padding: 30px 0;
-clear: both;
-font-size: 12px;
-color: #fff;
-color: #ccc;
-text-align: center;
-background: #333;
-border-top: 8px solid #4aaaa5;
-  }
-
-
-h3, h2 {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-  border-bottom: 2px solid #eeeeee;
-}
-
-
-  /* portfolio.html */
-  
-.main-section {
-  padding: 0 8px;
-}
-*.portfolio {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-  padding: 0 4px; 
-  }
-
-.portfolio:nth-child(even) {
-      margin-right: 0px;
-      float: left;
-  }
-
-.portfolio img {
-      width: 100%;
-      border: 0 none;
-      margin-top: 8px;
-      vertical-align: middle;
-  }
-
-.portfolio h3 {
-  position: absolute;
-  color: #ffffff;
-  background: #4aaaa5;
+.sidebar {
+  margin: 0;
+  padding: 0;
   width: 200px;
-  padding: 15px;
-  margin-bottom: 0;
-  border-bottom: 0;
-  bottom: 20px;
-  font-weight: 300;
-  line-height: 30px;
+  background-color: peachpuff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Icon Bar */
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: lightcoral;
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 33.33%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-left: 200px;
+}
+
+#sunset{
+    margin-right: 10px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  font-weight: 600;
+  font-size: 160%;
+}
+.top-lefter {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  font-weight: 600;
+  font-size: 160%;
+}
+
+/* Bottom right Copyright text */
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+/* END OF CONTAINER */
+
+/* Page break */
+.first { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
+#quote{
+  margin-top: 30px;
+  padding: 50px;
+}
+
+#therock{
+  font-size: 145%;
   text-align: center;
 }
 
-.responsive {
-width: 100%;
-height: auto;
+/* About Me Section */
+#about-me{
+  font-weight: 600;
+  font-display: bold;
+  text-align: center;
+  font-size: 225%;
 }
 
-/* contact.html */
-
-#contact-form ul {
-  margin-bottom: 20px;
+#self{
+  margin-left: 115px;
+  
 }
 
-#contact-form li {
-  margin-bottom: 10px;
+#bio {
+  /* margin-left: 280px; */
+  size: 50%;
+  
 }
 
-label,
-input[type=text],
-input[type=email],
-textarea {
-display: block;
-width: 100%;
+
+/* FOOTER */
+footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 30px;
 }
 
-input[type=text],
-input[type=email],
-textarea {
-height: 35px;
-padding: 0 10px;
-font-size: 14px;
-color: black;
-border: 1px solid #dddddd;
-}
 
-textarea {
-height: 200px;
-}
 
-input[type=submit] {
-padding: 10px 30px;
-margin: 10px;
-font-size: 18px;
-color: white;
-cursor: pointer;
-background:teal;
-border: 0 none;
-}
-
-/* sticky footer styling */
-
-/* https://css-tricks.com/snippets/css/sticky-footer/ */
-
-html,
-body {
-height: 100%;
-}
-
-.wrapper {
-height: auto !important;
-height: 100%;
-min-height: 100%;
-margin: 0 auto -105px;
-}
-
-footer,
-.push {
-height: 105px;
-}

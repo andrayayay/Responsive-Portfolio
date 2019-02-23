@@ -4,58 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <title>Andraya Smith's Portfolio</title>
-  <link rel="stylesheet" href="./Assets/CSS/reset.css">
+  <!-- CSS Links -->
   <link rel="stylesheet" type="text/css" href="./Assets/CSS/reset.css">
   <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
   <link rel="stylesheet" type="text/css" href="./Assets/CSS/mediaQueries.css">
+  <!-- Other pages HTML links -->
   <a href="../portfolio.html"></a>
   <a href="../contact.html"></a>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Materialize -->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!-- Javscript -->
+  <script type="text/javascript" src="./Assets/javascript/app.js"></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome JS -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-  <header id="top_header">
+ <!-- Sidebar  -->
+<div class="sidebar">
+    <a class="active" href="./index.html" id="home">Home</a>
+    <a href="./portfolio.html" id="portfolio">Portfolio</a>
+    <!-- <a href="./contact.html">Contact</a> -->
+<!-- Icon Bar in Sidebar -->
+<br><br>
+  <div class="icon-bar">
+        <a href="https://github.com/andrayayay"><i class="fab fa-github" id="github"></i></a> 
+        <a href="./contact.html"><i class="far fa-envelope" id="email"></i></a>
+        <a href="https://www.linkedin.com/in/andraya-smith-746757173/"><i class="fab fa-linkedin" id="linkedin"></i></a>
+      </div>
+  </div>
+  <!-- First Row -->
+  <div class="container" id="sunset">
+      <img src="./Assets/Images/sunset.jpg" alt="sunset" style="height:25%; width:100%;"> 
+      <div class="top-left">Andraya Mae Smith</div>
+      <div class="top-lefter">Web Designer and Developer</div>
+      <div class="bottom-right">Lake Murray, SC &copy; Andraya Smith 2011</div>
+  </div>
+
+<br><br>
+<!-- "First" Page Break -->
+  <hr class="first">
+
+  <!-- Second Row -->
+  <div class="row">
+    <div class="col-8">
+      <div class="container" id="quote">
+      <p id="therock">"Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come." - Dwayne "The Rock" Johnson</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<!-- Second Page Break (Same Class as first) -->
+<hr class="first">
+
+<br>
+  <!-- Third Row -->
+    <!-- First Col-4 -->
     <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Andraya Smith</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
+      <div class="col-lg-4">
+        <div class="container" id="self">
+          <h1 id="about-me">About Me</h1>
+          <br>
+              <img src="./Assets/Images/46754633_10214626458274204_1337967473315545088_n copy.jpg" style="height:250px; width: 250px;" id="self">
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <div id= "main-container" class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <!-- <h1>About me</h1> -->
-      </div>
-    </div>
-      
-    <div class="row">
-      <div class="col-md-10">
-        <img src="./Assets/Images/46754633_10214626458274204_1337967473315545088_n copy.jpg" class= "image" alt= "Andraya" style="height: 250px; width:250px;">
 
-          <p id="bio"> The reason I enjoy web development more than just a career choice, but as a hobby, is because it allows me to use both sides of my brain. What web development has allowed me to do is consider problems or tasks with analysis and then accomplish them with creativity. To expand my knowledge on this subject in hope to pursue a career, I completed a full stack web development bootcamp at the University of Texas at Austin. I also have freelance experience building and maintaining a UI for a local food trailer. I strive to be continuously learning along as an excellent communicator and collaborator, who opens all their projects to feedback and critique, because I know ultimately that it will allow me to become a better developer. 
+      <!-- Second Col-8 -->
+        <div class="col-lg-6">
+          <div class="container" id="me-talk">
+          <p id="bio">The reason I enjoy web development more than just a career choice, but as a hobby, is because it allows me to use both sides of my brain. What web development has allowed me to do is consider problems or tasks with analysis and then accomplish them with creativity. To expand my knowledge on this subject in hope to pursue a career, I completed a full stack web development bootcamp at the University of Texas at Austin. I also have freelance experience building and maintaining a UI for a local food trailer. I strive to be continuously learning along as an excellent communicator and collaborator, who opens all their projects to feedback and critique, because I know ultimately that it will allow me to become a better developer. 
             <br>
             <br>
             I work excellent with both front end/back end development tools such as:
@@ -70,9 +90,10 @@
        </div>
     </div>
   </div>
+</div>
 
   <footer>
-    <div class="footer">
+    <div class="container-fluid" id="footer">
       <div class="row">
         <div class="col-md-12">
           <p>Andraya Mae Smith Copyright &copy; 2018</p>
@@ -81,10 +102,15 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="./Assets/javascript/app.js"></script>
 
 </body>
 </html>
