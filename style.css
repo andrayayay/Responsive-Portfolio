@@ -1,3 +1,4 @@
+/* BODY */
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
@@ -14,30 +15,8 @@ body {
     box-sizing: border-box;
   }
 
-.container {
-    border-style: solid;
-    border-color: #dddddd;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
-    font-size: 18px;
-    color: black;
-    
-}
 
-h1, h2, h3,
-p {
-  margin-bottom: 20px;
-}
-
-/* last-child created a 0 margin between the paragraph and the footer*/
-
-p:last-child {
-    margin-bottom: 0;
-  }
-
-
+/* HEADERS */
 
 h1, h2, h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -51,59 +30,20 @@ h1 {
     line-height: 20px;
   }
 
-h2, h3 {
+
+h3, h2 {
   font-size: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eeeeee;
 }
 
-/* overflow: auto; a scrollbar will added to see the rest of the content.
-
-    The z-index property specifies the stack order of an element. An element with greater
-stack order is always in front of an element with a lower stack order.
-*/ 
-#top_header{
-    position: fixed;
-    background:#ffffff;
-    color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    margin: 0 0 20px; 
-    overflow: auto;
-    z-index: 100;
-    width: 100%;
+h1, h2, h3,
+p {
+  margin-bottom: 20px;
 }
 
-#logo {
-    float: left;
-    width: 250px;
-    height: 85px;
-    background: teal;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-
-}
-
-/*positioning nav bar*/
-
-/* design to nav links*/
-
- nav a {
-    display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
-    line-height: 18px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    border-left: 1px solid #efefef;
-  }
-
-nav a:first-child {
-    border-left: 0 none;
-  }
 
 /* main section*/
 
@@ -114,31 +54,23 @@ nav a:first-child {
     
 }
 
-.main-bio {
-    float: left;
-    width: 100%;
-    max-width: 960px;
-    padding: 30px;
-    margin: 0 0 40px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    overflow: hidden;
-  }
-
-.main-bio, .image, {
-    float: left;
+.container {
+  border-style: solid;
+  border-color: #dddddd;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+  font-size: 18px;
+  color: black;
+  
 }
 
 .image {
-    width: 100%;
-    height: auto;
     margin-top: 10px;
     margin-right: 15px;
   }
 
-.image, .main-bio {
-  float: left;
-}
   
 footer {
   padding: 10px;
@@ -151,13 +83,6 @@ footer {
   border-top: 8px solid #4aaaa5;
     }
 
-
-h3, h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eeeeee;
- }
 
 
     /* portfolio.html */
@@ -268,26 +193,4 @@ body {
   height: 105px;
 }
 
-@media screen and (max-width: 980px) {
-  .container{
-    max-width: 980px;
-  }
-}
-
-
-@media screen and (max-width:768px){
-  .container {
-    max-width: 768px;
-  }
-}
-
-
-@media screen and (max-width:640px) {
-  #top_header {
-    position: static;
-  }
-  .container{
-    max-width: 640px;
-  }
-} 
   
