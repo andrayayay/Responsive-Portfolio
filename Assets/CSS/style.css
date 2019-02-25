@@ -238,6 +238,10 @@ p {
   margin-left: 10px;
 }
 
+.portfolio-container{
+  margin-bottom: 50px;
+}
+
 .row {
   display: flex;
   padding: 0 4px;
@@ -252,5 +256,11 @@ p {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  margin-bottom: 20px;
 }
 
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 20px lightcoral;
+  padding-bottom: 10px;
+}
