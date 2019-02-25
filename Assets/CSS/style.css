@@ -27,6 +27,7 @@ body{
   padding: 16px;
   text-decoration: none;
   font-weight: 500;
+  text-shadow: 0.5px 0.5px grey;
 }
 
 /* Active/current link */
@@ -87,7 +88,7 @@ div.content {
   left: 70px;
   font-weight: 600;
   font-size: 160%;
-  text-shadow: 2px 2px #555;
+  text-shadow: 2px 2px 5px #555;
 }
 .top-lefter {
   position: absolute;
@@ -95,7 +96,7 @@ div.content {
   left: 150px;
   font-weight: 600;
   font-size: 160%;
-  text-shadow: 2px 2px #555;
+  text-shadow: 2px 2px 5px #555;
 }
 
 /* Bottom right Copyright text */
@@ -147,10 +148,11 @@ h1{
 }
 
 #self{
-  margin-left: 200px;
+  margin-left: 210px;
   position: absolute;
   padding: 10px;
   margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgb(12, 53, 58), 0 6px 20px 0 rgb(37, 36, 36);
 }
 
 #bio {
@@ -158,7 +160,7 @@ h1{
   margin: 20px;
   padding: 50px;
   size: 100%;
-  margin-left: 475px;
+  margin-left: 485px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 120%;
 }
@@ -172,6 +174,7 @@ footer{
   padding: 30px;
   display: flex;
   justify-content: center;
+  text-shadow: 0.5px 0.5px grey;
 }
 
 
@@ -187,6 +190,7 @@ footer{
   font-weight: 500;
   font-size: 120%;
   padding-top: 20px;
+  text-shadow: 0.5px 0.5px grey;
 }
 
 /* Style inputs with type="text", select elements and textareas */ 
@@ -198,7 +202,8 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Style the submit button with a specific background color etc */
@@ -209,6 +214,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -229,9 +235,11 @@ label{
 #header{
   font-weight: 600;
   font-size: 200%;
-  color: #333;
+  color: #222;
   text-align: center;
   padding-top: 20px;
+  text-shadow: 2px 2px white;
+  padding-bottom: 10px;
 }
 
 #port-paragraph{
@@ -239,6 +247,7 @@ label{
   font-size: 110%;
   padding-bottom: 20px;
   margin-left: 50px;
+  text-shadow: 0.5px 0.5px white;
 }
 
 .portfolio{
