@@ -87,6 +87,7 @@ div.content {
   left: 70px;
   font-weight: 600;
   font-size: 160%;
+  text-shadow: 2px 2px #555;
 }
 .top-lefter {
   position: absolute;
@@ -94,6 +95,7 @@ div.content {
   left: 150px;
   font-weight: 600;
   font-size: 160%;
+  text-shadow: 2px 2px #555;
 }
 
 /* Bottom right Copyright text */
@@ -123,8 +125,9 @@ div.content {
 #therock{
   font-size: 145%;
   text-align: center;
-  color: #222;
+  color: white;
   font-weight: 600;
+  text-shadow: 2px 2px #333;
 }
 
 /* About Me Section */
@@ -138,6 +141,9 @@ h1{
 
 #about-me{
   text-align: center;
+  text-shadow: 1px 1px white;
+  margin-left: 150px;
+  padding-top: 40px;
 }
 
 #self{
@@ -150,7 +156,7 @@ h1{
 #bio {
   /* margin-left: 280px; */
   margin: 20px;
-  padding: 30px;
+  padding: 50px;
   size: 100%;
   margin-left: 475px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
