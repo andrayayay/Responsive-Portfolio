@@ -25,60 +25,23 @@
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* Noticed a break for the portfolio chart */
-/* @media only screen and (min-width: 992px) {
-    .row{
-        padding-left: 20px;
-        padding-right: 100px;
-    }
-    .column img {
-        margin-top: 20px;
-        vertical-align: middle;
-        margin-bottom: 20px;
-      }
-      h3{
-          margin-bottom: 20px;
-      }
-}  */
 
+@media only screen and (min-width: 992px) {
+    
+} 
 
 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-    .row{
-        padding-left: 50px;
-        padding-right: 100px;
-        margin: 20px;
+@media only screen and (min-width: 1200px) {
     
-    }
-    .column{
-        margin-left: 50px;
-        margin-right: 20px;
-    
-    } */
-    /* .column img {
-        margin-top: 40px;
-        vertical-align: middle;
-        margin-bottom: 30px;
-      }
-
-    h3{
-        margin-top: 10px;
-        
-    } */
-
+}
 
 
 
 /* devices (landscape tablets, 1400px and up) */
-/* @media only screen and (min-width: 1400px) {
-    .column img {
-        margin-top: 40px;
-        vertical-align: middle;
-        margin-bottom: 30px;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-}  */
+@media only screen and (min-width: 1400px) {
+
+}
+    
